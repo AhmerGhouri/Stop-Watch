@@ -1,0 +1,174 @@
+body, html {
+  
+    height: 100%;
+}
+  
+* {
+
+    box-sizing: border-box;
+
+}
+  
+.bg-image {
+
+    background-image: url("stopwatch-online.webp");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.bg-text {
+
+
+    background-color: rgba(87, 151, 185, 0.329);
+    box-shadow: 4px 4px 8px 1px ;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid brown;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.time{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+
+.watch{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: space-around;
+
+}
+
+button {
+
+    border: 1px brown solid;
+    border-radius: 20px;
+    color: wheat;
+    height : 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkcyan;
+
+}
+
+button:hover {
+
+    background-color: rgba(61, 111, 138, 0.329);
+    color: black;
+    border: 1px black solid;
+    border-radius: 20px;
+
+}
+
+button:active {
+
+    background-color: rgba(46, 66, 179, 0.521);
+    color: blue;
+    border: 1px blue solid;
+    border-radius: 20px;
+
+}
+
+.bg-text1 {
+
+
+    background-color: rgba(87, 151, 185, 0.329);
+    box-shadow: 4px 4px 8px 1px ;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid brown;
+    border-radius: 10px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}
+@media (max-width: 576px) {
+
+    .bg-text , .bg-text1{
+
+        width: 100%;
+        border-radius: 1px;
+       
+    }
+
+    .watch {
+        width: 100%;
+    }
+
+    .bg-text1{
+        position: absolute;
+        top: 90%;
+    }
+
+    .bg-image {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+
+
+}
+
+@media screen and (min-width : 768px){
+
+    .watch{
+        width: 75%;
+    }
+
+}
+
+@media (min-width: 992px) { 
+
+    .watch{
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        justify-content: space-around;
+    
+    }
+
+ }
+
+
+@media (min-width: 1200px) { 
+
+    .watch{
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        justify-content: space-around;
+    
+    }
+
+ }
